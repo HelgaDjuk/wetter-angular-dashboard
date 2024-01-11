@@ -1,0 +1,89 @@
+#dashboard {
+
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background:#E9F2F0;
+    align-items: center;
+    }
+    .dashboard-kopf {
+    width: 100%;
+    font-size: 180%;
+    text-align: center;
+    display: inline-block;
+    background:#CDD9E0;
+    color:#1E304B;
+    margin-bottom: 3rem;
+    }
+    .dashboard-zeile {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+   
+    }
+    .dia-zeile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    mat-card {
+    width:45%;
+    }
+    mat-card-title{
+        text-align: center;
+    }
+    mat-card-subtitle{
+    margin: 1rem;
+    text-align: center;
+    }
+    #karte01 {
+    margin-right: 3rem;
+    background:#CDD9E0;
+    
+
+    }
+    #karte02 {
+    background: rgb(228, 222, 220);
+    }
+    
+    #willkommen{
+        width:100%;
+        background-color: #CDD9E0;
+        color: #1E304B;
+        padding-left: 5rem;
+       
+    }
+
+    #willkommen p{
+        width: 90%;
+         text-align:justify;
+        font-weight: 500;
+    }
+    .text-wrap{
+        display: inline-block;
+        text-align: center;
+    }
+    #willkommen mat-card-title {
+        font-size: 130%;
+        text-align: center;
+    }
+    @media screen and (max-width: 900px) {
+        .dashboard-kopf{
+            font-size: 130%;
+            margin-bottom: 1rem;
+        }
+        .dashboard-zeile{
+            margin-bottom: 1rem;
+        }
+      .dia-zeile{
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      mat-card{
+        width: 100%;
+      }
+      #willkommen {
+        padding-left: 2rem;
+      }
+    }
